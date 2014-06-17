@@ -2,13 +2,18 @@
 
 from Publisher import *
 
+ip = '192.168.1.2'	# IP address of the server
+port = 7711		# Thrift listen port of the server
+username = 'admin'	# username
+password = 'admin' 	# passowrd 
+
 publisher = Publisher()
 
 # Initialize publisher with ip and port of server
-publisher.init('192.168.1.2', 7711)
+publisher.init(ip, port)
 
 # Connect to server with username and password
-publisher.connect('admin', 'admin')
+publisher.connect(username, password)
 
 # Define stream definition
 streamDefinition = "{ 'name':'stratos_stream_definition', 'version':'1.0.0', 'payloadData':[ {'name':'message','type':'STRING'} ] }";
