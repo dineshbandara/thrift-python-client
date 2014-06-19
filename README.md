@@ -7,6 +7,11 @@ Prerequisites
 
 * Python 2.x
 
+Folder Structure
+-----------------
+* gen-py : Source code generated via Thrift compiler for relevent Thrift files
+* thrift : Set of Python packages provided by Thrift. Can be found at [THRIFT_SOURCE]/lib/py/src
+
 Configurations
 ------------------
 
